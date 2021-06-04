@@ -1,0 +1,78 @@
+{
+  "type": "record",
+  "name": "transaction",
+  "namespace": "event",
+  "fields": [
+    {
+      "name": "timestamp",
+      "type": "string"
+    },
+    {
+      "type": "string",
+      "name": "req_uid"
+    },
+    {
+      "type": "string",
+      "name": "company_code"
+    },
+    {
+      "type": "string",
+      "name": "company_name"
+    },
+    {
+      "type": "string",
+      "name": "channel"
+    },
+    {
+      "type": "string",
+      "name": "version"
+    },
+    {
+      "type": "string",
+      "name": "product"
+    },
+    {
+      "type": "string",
+      "name": "event_code"
+    },
+    {
+      "type": "string",
+      "name": "event_name"
+    },
+    {
+      "type": "string",
+      "name": "event_status"
+    },
+    {
+      "type": "string",
+      "name": "service_name"
+    },
+    {
+      "type": "string",
+      "name": "description"
+    },
+    {
+      "name": "transaction_detail",
+      "type": {
+        "type": "record",
+        "name": "transaction_detail",
+        "fields": [
+          {
+            "type": "double",
+            "name": "tranAmount"
+          },
+          {
+            "type": "double",
+            "name": "merFeeAmt"
+          },
+          {
+            "type": "double",
+            "name": "cusFeeAmt"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+
