@@ -51,6 +51,9 @@ func main() {
 	//avroSchema := `{"type":"record","name":"myrecord","fields":[{"name":"id","type":"string"},{"name":"name","type":"string"}]}`
 	// 2) Fetch the latest version of the schema, or create a new one if it is the first
 
+
+
+
 	schemaRegistryClient := srclient.CreateSchemaRegistryClient("http://0.0.0.0:8081")
 	err = schemaRegistryClient.DeleteSubject(fmt.Sprintf("%s-value", topic), true)
 	if err != nil {
